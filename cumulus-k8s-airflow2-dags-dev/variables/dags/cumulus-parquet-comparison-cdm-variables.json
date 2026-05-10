@@ -1,0 +1,7 @@
+{
+  "name": "cumulus-parquet-comparison-cdm-variables",
+  "dev": {
+      "schedule" : "00 17 * * *",
+      "JOB_ID" : "1750423"
+  }
+}

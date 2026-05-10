@@ -1,0 +1,119 @@
+{
+	"name": "cumulus_steps",
+	"dev": {
+		"dailyci_wppgen1": "dps_stdraw",
+		"dailyci_peink": "dps_stdraw",
+
+		"dailyci_gotham_ledm": "dps_stdraw,laser_dps_stdraw,laser_dps_stdraw_delta_lake,dps_ocv",
+		"dailyci_wppgen2_scheduled": "dps_stdraw,laser_dps_stdraw,laser_dps_stdraw_delta_lake,dps_ocv",
+
+		"dailyci_pelaser_printernet": "dps_stdraw,dps_stdraw_delta_lake,dps_ocv",
+		"dailyci_pelaser_dpp": "dps_stdraw,dps_stdraw_delta_lake,dps_ocv",
+		"dailyci_printernet_mhit_dpp": "dps_stdraw,dps_stdraw_delta_lake,dps_ocv",
+		"dailyci_jam_mhit_dpp": "dps_stdraw,dps_stdraw_delta_lake,dps_ocv",
+		"dailyci_jam_ledm_dpp": "dps_stdraw,dps_stdraw_delta_lake,dps_ocv",
+		"dailyci_hppk_ampv": "dps_stdraw,dps_stdraw_delta_lake",
+		"dailyci_samsung_ampv": "dps_stdraw",
+		"dailyci_wja_ledm_dpp": "dps_stdraw,dps_stdraw_delta_lake,dps_ocv",
+		"dailyci_wja_mhit_dpp": "dps_stdraw,dps_stdraw_delta_lake,dps_ocv",
+
+		"dailyci_peink-xref": "dps_stdraw_xref_harvest",
+		"dailyci_wppgen2_scheduled-xref": "dps_stdraw_xref_harvest",
+		"dailyci_gotham_ledm-xref": "dps_stdraw_xref_harvest",
+		"dailyci_wppgen1-xref": "dps_stdraw_xref_harvest",
+
+		"dailyci_fil_pelaser_dpp": "dps_stdraw,dps_stdraw_delta_lake",
+		"dailyci_fil_jam_ledm_dpp": "dps_stdraw",
+		"dailyci_fil_jam_mhit_dpp": "dps_stdraw,dps_stdraw_delta_lake",
+		"dailyci_fil_pelaser_printernet": "dps_stdraw,dps_stdraw_delta_lake",
+		"dailyci_fil_wppgen2_scheduled": "dps_stdraw,dps_stdraw_delta_lake,dps_ocv",
+		"dailyci_fil_printernet_mhit_dpp": "dps_stdraw,dps_stdraw_delta_lake",
+		"dailyci_fil_wja_mhit_dpp": "dps_stdraw",
+		"dailyci_fil_wja_ledm_dpp": "dps_stdraw",
+		"dailyci_fil_hppk_ampv": "dps_stdraw",
+		"dailyci_fil_gotham_ledm": "dps_stdraw,dps_stdraw_delta_lake",
+
+		"dailyci_psu-laser-sol-prod-stack": "prod_stack",
+		"dailyci_psu-laser-sol-stage-stack": "stage_stack",
+		"dailyci_psu-ink-fleet-prod-stack": "prod_stack",
+		"dailyci_psu-ink-fleet-stage-stack": "stage_stack",
+
+		"dev_psu-laser-sol-prod-stack": "prod_stack",
+		"dev_psu-ink-fleet-prod-stack": "prod_stack",
+		"dev_psu-laser-sol-stage-stack": "stage_stack",
+		"dev_psu-ink-fleet-stage-stack": "stage_stack",
+
+		"dailyci_sh_fleet_prod_stack": "prod_stack",
+		"dailyci_sh_fleet_stage_stack": "stage_stack",
+		"dev_sh_fleet_prod_stack": "prod_stack",
+		"dev_sh_fleet_stage_stack": "stage_stack",
+
+		"dailyci_job-history-prod-stack": "prod_stack",
+		"dailyci_job-history-stage-stack": "stage_stack",
+		"dev_job-history-prod-stack": "prod_stack",
+		"dev_job-history-stage-stack": "stage_stack",
+
+		"dailyci_lfp_all_event_raw_data_prod_stack": "prod_stack",
+		"dailyci_lfp_all_event_raw_data_stage_stack": "stage_stack"
+
+	},
+
+	"itg": {
+		"itg_peink": "dps_stdraw",
+		"itg_wppgen1": "dps_stdraw",
+
+		"itg_wppgen2_scheduled": "dps_stdraw,laser_dps_stdraw,dps_ocv",
+		"itg_gotham_ledm": "dps_stdraw,laser_dps_stdraw,dps_ocv",
+
+		"itg_pelaser_printernet": "dps_stdraw,dps_ocv",
+		"itg_pelaser_dpp": "dps_stdraw,dps_ocv",
+		"itg_printernet_mhit_dpp": "dps_stdraw,dps_ocv",
+		"itg_jam_mhit_dpp": "dps_stdraw,dps_ocv",
+		"itg_jam_ledm_dpp": "dps_stdraw,dps_ocv",
+		"itg_hppk_ampv": "dps_stdraw",
+		"itg_samsung_ampv": "dps_stdraw",
+		"itg_wja_ledm_dpp": "dps_stdraw,dps_ocv",
+		"itg_wja_mhit_dpp": "dps_stdraw,dps_ocv",
+
+		"itg_peink-xref": "dps_stdraw_xref_harvest",
+		"itg_wppgen2_scheduled-xref": "dps_stdraw_xref_harvest",
+		"itg_gotham_ledm-xref": "dps_stdraw_xref_harvest",
+		"itg_wppgen1-xref": "dps_stdraw_xref_harvest",
+
+		"itg_cdm_psu_laser_sol_prod_stack": "prod_stack",
+		"itg_cdm_psu_ink_fleet_prod_stack": "prod_stack",
+		"itg_cdm_psu_ink_sol_prod_stack": "prod_stack",
+
+		"itg_sh_fleet_prod_stack": "prod_stack",
+		"itg_sh_fleet_stage_stack": "stage_stack"
+
+	},
+
+	"prod": {
+		"prod_peink": "dps_stdraw",
+		"prod_wppgen1": "dps_stdraw",
+
+		"prod_wppgen2_scheduled": "dps_stdraw,laser_dps_stdraw,dps_ocv",
+		"prod_gotham_ledm": "dps_stdraw,laser_dps_stdraw,dps_ocv",
+
+
+		"prod_pelaser_printernet": "dps_stdraw,dps_ocv",
+		"prod_pelaser_dpp": "dps_stdraw,dps_ocv",
+		"prod_printernet_mhit_dpp": "dps_stdraw,dps_ocv",
+		"prod_jam_mhit_dpp": "dps_stdraw,dps_ocv",
+		"prod_jam_ledm_dpp": "dps_stdraw,dps_ocv",
+		"prod_wja_ledm_dpp": "dps_stdraw,dps_ocv",
+		"prod_wja_mhit_dpp": "dps_stdraw,dps_ocv",
+		"prod_hppk_ampv": "dps_stdraw",
+		"prod_samsung_ampv": "dps_stdraw,dps_stdraw_delta_lake",
+
+		"prod_peink-xref": "dps_stdraw_xref_harvest",
+		"prod_wppgen2_scheduled-xref": "dps_stdraw_xref_harvest",
+		"prod_gotham_ledm-xref": "dps_stdraw_xref_harvest",
+		"prod_wppgen1-xref": "dps_stdraw_xref_harvest",
+
+		"prod_sh-mixed-sol": "prod_stack",
+		"prod_sh_fleet_prod_stack": "prod_stack",
+		"prod_sh_fleet_stage_stack": "stage_stack"
+	}
+}

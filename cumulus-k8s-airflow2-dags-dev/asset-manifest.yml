@@ -1,0 +1,17 @@
+# Instructions Location: https://docs.hponecloud.com/standards-processes/platform-development/asset-manifest
+# HP Asset Manifest File.  To be include in ALL software repositories to support identifying the purpose, status and individuals responsible for the content of the repo
+# Description Section provides information about the repo purpose itself and the service, client or other contents it supports
+
+#DO NOT MODIFY the following line
+version: 1.0
+
+description: DataOS application to manage Airflow code
+parentInitiative: DataOS
+language: Python
+projectType: application
+
+# Contains information about the teams and individuals responsible for the contents of the repository
+stewardship:
+   stewardTeam: Cumulus
+   stewardManager: rudy.garza@hp.com
+   l3: thieu.dang@hp.com

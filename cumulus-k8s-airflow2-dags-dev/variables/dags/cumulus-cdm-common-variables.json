@@ -1,0 +1,33 @@
+{
+  "name": "cumulus-cdm-common-variables",
+  "dev": {
+        "DATABRICKS_ENDPOINT": "https://dataos-cumulus-dev.cloud.databricks.com",
+        "DATABRICKS_CREDENTIALS": "arn:aws:secretsmanager:us-west-2:740156627385:secret:codeway/databricks/team-cumulus-run-user",
+        "ecr_image": "cumulus-airflow-base:REL-0.0.55",
+        "service_account_name": "cumulus-airflow2",
+        "configmaps":"databricks-cumulus-job-ids",
+        "alert_email": "ryan.schreiber@hp.com,vivek.kovvuru@hp.com,zachary.suarez@hp.com",
+        "run_command": "python cdm_run_databricks_job.py"
+  },
+
+  "itg": {
+        "DATABRICKS_ENDPOINT": "https://dataos-cumulus-stg.cloud.databricks.com",
+        "DATABRICKS_CREDENTIALS": "arn:aws:secretsmanager:us-west-2:828361281741:secret:itg/k8s/airflow/cumulus/databricks-e2",
+        "ecr_image": "cumulus-airflow-base:REL-0.0.55",
+        "service_account_name": "cumulus-airflow2-itg",
+        "run_command": "python cdm_run_databricks_job.py",
+        "configmaps":"databricks-cumulus-job-ids",
+        "alert_email": "ryan.schreiber@hp.com,vivek.kovvuru@hp.com,zachary.suarez@hp.com"
+
+  },
+
+  "prod": {
+        "DATABRICKS_ENDPOINT": "https://dataos-cumulus-prod.cloud.databricks.com",
+        "DATABRICKS_CREDENTIALS": "arn:aws:secretsmanager:us-west-2:828361281741:secret:prod/k8s/airflow/cumulus/databricks-e2",
+        "ecr_image": "cumulus-airflow-base:REL-0.0.55",
+        "service_account_name": "cumulus-airflow2-prod",
+        "run_command": "python cdm_run_databricks_job.py",
+        "configmaps":"databricks-cumulus-job-ids",
+        "alert_email": "ryan.schreiber@hp.com,vivek.kovvuru@hp.com,zachary.suarez@hp.com"
+  }
+}

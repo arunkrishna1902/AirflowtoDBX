@@ -1,0 +1,15 @@
+{
+    "name": "cumulus-gotham_ledm",
+    "dev": {
+        "start_date": "2019-10-30",
+        "schedule_interval": "00 03 * * *"
+    },
+    "itg": {
+        "start_date": "2020-04-14",
+        "schedule_interval": "10 12 * * *"
+    },
+    "prod": {
+        "start_date": "2020-09-16",
+        "schedule_interval": "00 03 * * *"
+    }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "cumulus-parquet-comparison-raw-variables",
+  
+  "dev": {
+      "schedule" : "00 17 * * *",
+      "ecr_image": "cumulus-airflow-base:9b7f9f5315a8b1e2b04fc027b861bf4ce6a992e2",
+      "JOB_ID" : "13797"
+  },
+
+  "itg": {
+      "schedule" : "00 15 * * *",
+      "ecr_image": "cumulus-airflow-base:9b7f9f5315a8b1e2b04fc027b861bf4ce6a992e2",
+      "JOB_ID" : "2204"
+  },
+
+  "prod": {
+      "schedule" : "00 17 * * *",
+      "ecr_image": "cumulus-airflow-base:9b7f9f5315a8b1e2b04fc027b861bf4ce6a992e2",
+      "JOB_ID" : ""
+  }
+}

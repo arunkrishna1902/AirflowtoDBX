@@ -1,0 +1,200 @@
+{
+	"name": "cumulus-dsr-psu-laser",
+	"dev": {
+		"dsr_image_tag": "REL-1.1.1",
+		"dsr_configuration": {
+			"data_product": "laser_psu",
+			"data_product_owner": "rudy.garza@hp.com",
+			"dsr_operation_mode": "all",
+			"dsr_max_task_concurrency": 1,
+			"logging": true,
+			"dsr_audit_database": "bdbt",
+			"dsr_audit_schema": "dsr_audit",
+			"dsr_id_database": "bdbt",
+			"dsr_id_schema": "data_privacy",
+			"dsr_id_sources": [
+				{
+					"name": "dsr_sn_blacklist_enrich",
+					"default": false,
+					"dsr_id_table": "dsr_sn_blacklist_enrich"
+				}
+			],
+			"data_table_database": "bdbt",
+			"data_table_schema": "print_telem_etl_private",
+			"data_tables": [
+				{
+					"name": "laser_psu",
+					"dsr_id_sources": [
+						{
+							"name": "dsr_sn_blacklist_enrich",
+							"data_table_key_aliases": {
+								"serial_number": "serial_number",
+								"product_number": "product_number"
+							}
+						}
+					]
+				}
+			]
+		},
+		"email_to": [
+			"vivek.kovvuru@hp.com"
+		],
+		"service_account_name": "cumulus-airflow2",
+		"tolerations": "cumulus_tolerations",
+		"node_selector": "cumulus_node_selector",
+		"env_vars": {
+			"type": "redshift",
+			"host": "bdbt-redshift-dev.hp8.us",
+			"database": "bdbt",
+			"schema": "print_telem_etl_private",
+			"port": "5439",
+			"secretname": "dev/redshift/auto_laser_std_raw",
+			"threads": "1",
+			"AWS_DEFAULT_REGION": "us-west-2",
+			"IRSA_ROLE": "arn:aws:iam::740156627385:role/k8s-core-cumulus-airflow2",
+			"CROSS_ROLE": "arn:aws:iam::714256721545:role/Dev-EC2-PowerUser",
+			"DBT_EXEC_AWS_PROFILE": "irsa"
+		},
+		"default_access_control": {
+			"cumulus-operator": [
+				"can_read",
+				"can_edit"
+			],
+			"cumulus-admin": [
+				"can_read",
+				"can_edit"
+			]
+		}
+	},
+	"itg": {
+		"dsr_image_tag": "REL-1.1.1",
+		"dsr_configuration": {
+			"data_product": "laser_psu",
+			"data_product_owner": "rudy.garza@hp.com",
+			"dsr_operation_mode": "all",
+			"dsr_max_task_concurrency": 1,
+			"logging": true,
+			"dsr_audit_database": "bdbt",
+			"dsr_audit_schema": "dsr_audit",
+			"dsr_id_database": "bdbt",
+			"dsr_id_schema": "data_privacy",
+			"dsr_id_sources": [
+				{
+					"name": "dsr_sn_blacklist_enrich",
+					"default": false,
+					"dsr_id_table": "dsr_sn_blacklist_enrich"
+				}
+			],
+			"data_table_database": "bdbt",
+			"data_table_schema": "print_telem_etl_private",
+			"data_tables": [
+				{
+					"name": "laser_psu",
+					"dsr_id_sources": [
+						{
+							"name": "dsr_sn_blacklist_enrich",
+							"data_table_key_aliases": {
+								"serial_number": "serial_number",
+								"product_number": "product_number"
+							}
+						}
+					]
+				}
+			]
+		},
+		"email_to": [
+			"vivek.kovvuru@hp.com"
+		],
+		"service_account_name": "cumulus-airflow2-itg",
+		"tolerations": "cumulus_tolerations",
+		"node_selector": "cumulus_node_selector",
+		"env_vars": {
+			"type": "redshift",
+			"host": "bdbt-redshift-itg-02.hp8.us",
+			"database": "bdbt",
+			"schema": "print_telem_etl_private",
+			"port": "5439",
+			"secretname": "itg02/redshift/auto_laser_std_raw",
+			"threads": "1",
+			"AWS_DEFAULT_REGION": "us-west-2",
+			"IRSA_ROLE": "arn:aws:iam::828361281741:role/k8s-core-cumulus-airflow2-itg",
+			"CROSS_ROLE": "arn:aws:iam::651785582400:role/cumulus-databricks-s3-access-role-stg",
+			"DBT_EXEC_AWS_PROFILE": "irsa"
+		},
+		"default_access_control": {
+			"cumulus-operator": [
+				"can_read",
+				"can_edit"
+			],
+			"cumulus-admin": [
+				"can_read",
+				"can_edit"
+			]
+		}
+	},
+	"prod": {		"dsr_image_tag": "REL-1.1.1",
+		"dsr_configuration": {
+			"data_product": "laser_psu",
+			"data_product_owner": "rudy.garza@hp.com",
+			"dsr_operation_mode": "all",
+			"dsr_max_task_concurrency": 1,
+			"logging": true,
+			"dsr_audit_database": "bdbt",
+			"dsr_audit_schema": "dsr_audit",
+			"dsr_id_database": "bdbt",
+			"dsr_id_schema": "data_privacy",
+			"dsr_id_sources": [
+				{
+					"name": "dsr_sn_blacklist_enrich",
+					"default": false,
+					"dsr_id_table": "dsr_sn_blacklist_enrich"
+				}
+			],
+			"data_table_database": "bdbt",
+			"data_table_schema": "print_telem_etl_private",
+			"data_tables": [
+				{
+					"name": "laser_psu",
+					"dsr_id_sources": [
+						{
+							"name": "dsr_sn_blacklist_enrich",
+							"data_table_key_aliases": {
+								"serial_number": "serial_number",
+								"product_number": "product_number"
+							}
+						}
+					]
+				}
+			]
+		},
+		"email_to": [
+			"vivek.kovvuru@hp.com"
+		],
+		"service_account_name": "cumulus-airflow2-prod",
+		"tolerations": "cumulus_tolerations",
+		"node_selector": "cumulus_node_selector",
+		"env_vars": {
+			"type": "redshift",
+			"host": "bdbt-redshift-prod-04.hp8.us",
+			"database": "bdbt",
+			"schema": "print_telem_etl_private",
+			"port": "5439",
+			"secretname": "prod04/redshift/auto_laser_std_raw",
+			"threads": "1",
+			"AWS_DEFAULT_REGION": "us-west-2",
+			"IRSA_ROLE": "arn:aws:iam::828361281741:role/k8s-core-cumulus-airflow2-prod",
+			"CROSS_ROLE": "arn:aws:iam::651785582400:role/cumulus-databricks-s3-access-role-prod",
+			"DBT_EXEC_AWS_PROFILE": "irsa"
+		},
+		"default_access_control": {
+			"cumulus-operator": [
+				"can_read",
+				"can_edit"
+			],
+			"cumulus-admin": [
+				"can_read",
+				"can_edit"
+			]
+		}
+	}
+}

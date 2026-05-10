@@ -1,0 +1,15 @@
+{
+  "name": "lf_node_selector",
+  
+  "dev": {
+    "deployment" : "team-lf-airflow-dags"
+  },
+  
+  "itg": {
+    "deployment" : "team-lf-airflow-dags"
+  },
+  
+  "prod": {
+    "deployment" : "team-lf-airflow-dags"
+  }
+}

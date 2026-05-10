@@ -1,0 +1,20 @@
+{
+  "name":"cumulus_mms",
+  
+  "dev": {
+    "REDSHIFT_USERNAME": "rsautomation",
+    "REDSHIFT_PORT": "5439",
+    "REDSHIFT_HOST": "bdbt-redshift-dev.hp8.us",
+    "REDSHIFT_DBNAME": "bdbt",
+    "REDSHIFT_IAM_ROLE": "arn:aws:iam::714256721545:role/BD-RedshiftCopyUnload",
+    "TEST": "test"
+  },
+  
+  "itg": {
+  
+  },
+  
+  "prod": {
+  
+  }	
+}

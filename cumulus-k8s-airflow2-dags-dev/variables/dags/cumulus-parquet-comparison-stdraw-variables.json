@@ -1,0 +1,18 @@
+{
+  "name": "cumulus-parquet-comparison-stdraw-variables",
+  
+  "dev": {
+      "schedule" : "00 17 * * *",
+      "JOB_ID" : "1183594"
+  },
+
+  "itg": {
+      "schedule" : "00 15 * * *",
+      "JOB_ID" : "31887"
+  },
+
+  "prod": {
+      "schedule" : "00 17 * * *",
+      "JOB_ID" : ""
+  }
+}

@@ -1,0 +1,15 @@
+{
+    "name": "cumulus-printernet_mhit_dpp",
+    "dev": {
+        "start_date": "2021-06-01",
+        "schedule_interval": "00 02 * * *"
+        },
+    "itg": {
+        "start_date": "2020-06-01",
+        "schedule_interval": "00 13 * * *"
+    },
+    "prod": {
+        "start_date": "2021-07-06",
+        "schedule_interval": "00 02 * * *"
+    }
+}

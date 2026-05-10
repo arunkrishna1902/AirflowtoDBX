@@ -1,0 +1,15 @@
+{
+   "name":"cumulus-wppgen2_scheduled-xref",
+   "dev": {
+        "start_date": "2021-02-21",
+        "schedule_interval": "30 20 * * 0"
+    },
+    "itg": {
+        "start_date": "2021-02-21",
+        "schedule_interval": "30 20 * * 0"
+    },
+    "prod": {
+        "start_date": "2021-02-01",
+        "schedule_interval": "30 20 * * 0"
+    }	
+}

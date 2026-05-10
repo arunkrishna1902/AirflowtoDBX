@@ -1,0 +1,8 @@
+{
+  "name": "lf_tolerations",
+  
+  "dev":  [{"key": "deployment", "operator": "Equal", "value": "team-lf-airflow-dags", "effect": "NoSchedule"}],
+  "itg":  [{"key": "deployment", "operator": "Equal", "value": "team-lf-airflow-dags", "effect": "NoSchedule"}],
+  "prod": [{"key": "deployment", "operator": "Equal", "value": "team-lf-airflow-dags", "effect": "NoSchedule"}]
+  
+}

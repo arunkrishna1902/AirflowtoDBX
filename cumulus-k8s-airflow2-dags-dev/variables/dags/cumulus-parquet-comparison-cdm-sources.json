@@ -1,0 +1,13 @@
+{
+  "name": "cumulus-parquet-comparison-cdm-sources",
+  "dev": {
+    "lfp-aerd": {
+      "dag": "dailyci_lfp_all_event_raw_data_prod_stack",
+      "task": "dailyci-lfp-all-event-raw-data-prod-stack-prod-stack-run"
+    },
+    "sh": {
+      "dag": "dailyci_sh_fleet_prod_stack",
+      "task": "dailyci-sh-fleet-prod-stack-prod-stack-run"
+    }
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "name": "cumulus-parquet-comparison-stdraw-sources",
+  
+  
+  "dev": {
+    "peink": {
+      "dag": "dailyci_peink",
+      "task": "dailyci-peink-dps-stdraw-delta-lake-run"
+    },
+    "wppgen2_scheduled": {
+      "dag": "dailyci_wppgen2_scheduled",
+      "task": "dailyci-wppgen2-scheduled-dps-stdraw-delta-lake-run"
+    },
+    "wppgen1":{
+      "dag": "dailyci_wppgen1",
+      "task": "dailyci-wppgen1-dps-stdraw-delta-lake-run"
+    },
+    "gotham_ledm": {
+      "dag": "dailyci_gotham_ledm",
+      "task": "dailyci-gotham-ledm-dps-stdraw-delta-lake-run"
+    },
+    "jam_ledm_dpp":{
+      "dag": "dailyci_jam_ledm_dpp",
+      "task": "dailyci-jam-ledm-dpp-dps-stdraw-delta-lake-run"
+    },
+    "jam_mhit_dpp":{
+      "dag": "dailyci_jam_mhit_dpp",
+      "task": "dailyci-jam-mhit-dpp-dps-stdraw-delta-lake-run"
+    },
+    "wja_ledm_dpp":{
+      "dag": "dailyci_wja_ledm_dpp",
+      "task": "dailyci-wja-ledm-dpp-dps-stdraw-delta-lake-run"
+    },
+    "wja_mhit_dpp":{
+      "dag": "dailyci_wja_mhit_dpp",
+      "task": "dailyci-wja-mhit-dpp-dps-stdraw-delta-lake-run"
+    },
+    "pelaser_dpp":{
+      "dag": "dailyci_pelaser_dpp",
+      "task": "dailyci-pelaser-dpp-dps-stdraw-delta-lake-run"
+    },
+    "pelaser_printernet":{
+      "dag": "dailyci_pelaser_printernet",
+      "task": "dailyci-pelaser-printernet-dps-stdraw-delta-lake-run"
+    },
+    "hppk_ampv":{
+      "dag": "dailyci_hppk_ampv",
+      "task": "dailyci-hppk-ampv-dps-stdraw-delta-lake-run"
+    },
+    "samsung_ampv":{
+      "dag": "dailyci_samsung_ampv",
+      "task": "dailyci-samsung-ampv-dps-stdraw-delta-lake-run"
+    },
+    "printernet_mhit_dpp":{
+      "dag": "dailyci_printernet_mhit_dpp",
+      "task": "dailyci-printernet-mhit-dpp-dps-stdraw-delta-lake-run"
+    },
+    "gotham_ledm_laser":{
+      "dag": "dailyci_gotham_ledm",
+      "task": "dailyci-gotham-ledm-laser-dps-stdraw-delta-lake-run"
+    },
+    "wppgen2_scheduled_laser": {
+      "dag": "dailyci_wppgen2_scheduled",
+      "task": "dailyci-wppgen2-scheduled-laser-dps-stdraw-delta-lake-run"
+    }
+  },
+  
+  
+  "itg": {
+    "peink": {
+      "dag": "itg_peink",
+      "task": "itg-peink-dps-stdraw-run"
+    },
+    "wppgen2_scheduled": {
+      "dag": "itg_wppgen2_scheduled",
+      "task": "itg-wppgen2-scheduled-dps-stdraw-delta-lake-run"
+    },
+    "wppgen1":{
+      "dag": "itg_wppgen1",
+      "task": "itg-wppgen1-dps-stdraw-delta-lake-run"
+    },
+    "gotham_ledm": {
+      "dag": "itg_gotham_ledm",
+      "task": "itg-gotham-ledm-dps-stdraw-delta-lake-run"
+    },
+    "jam_ledm_dpp":{
+      "dag": "itg_jam_ledm_dpp",
+      "task": "itg-jam-ledm-dpp-dps-stdraw-delta-lake-run"
+    },
+    "jam_mhit_dpp":{
+      "dag": "itg_jam_mhit_dpp",
+      "task": "itg-jam-mhit-dpp-dps-stdraw-delta-lake-run"
+    },
+    "wja_ledm_dpp":{
+      "dag": "itg_wja_ledm_dpp",
+      "task": "itg-wja-ledm-dpp-dps-stdraw-delta-lake-run"
+    },
+    "wja_mhit_dpp":{
+      "dag": "itg_wja_mhit_dpp",
+      "task": "itg-wja-mhit-dpp-dps-stdraw-delta-lake-run"
+    },
+    "pelaser_dpp":{
+      "dag": "itg_pelaser_dpp",
+      "task": "itg-pelaser-dpp-dps-stdraw-delta-lake-run"
+    },
+    "pelaser_printernet":{
+      "dag": "itg_pelaser_printernet",
+      "task": "itg-pelaser-printernet-dps-stdraw-delta-lake-run"
+    },
+    "hppk_ampv":{
+      "dag": "itg_hppk_ampv",
+      "task": "itg-hppk-ampv-dps-stdraw-delta-lake-run"
+    },
+    "samsung_ampv":{
+      "dag": "itg_samsung_ampv",
+      "task": "itg-samsung-ampv-dps-stdraw-delta-lake-run"
+    },
+    "printernet_mhit_dpp":{
+      "dag": "itg_printernet_mhit_dpp",
+      "task": "itg-printernet-mhit-dpp-dps-stdraw-delta-lake-run"
+    },
+    "gotham_ledm_laser":{
+      "dag": "itg_gotham_ledm",
+      "task": "itg-gotham-ledm-laser-dps-stdraw-delta-lake-run"
+    },
+    "wppgen2_scheduled_laser": {
+      "dag": "itg_wppgen2_scheduled",
+      "task": "itg-wppgen2-scheduled-laser-dps-stdraw-delta-lake-run"
+    }
+  },
+  
+  
+  "prod": {}
+}

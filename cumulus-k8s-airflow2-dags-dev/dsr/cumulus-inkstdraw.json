@@ -1,0 +1,58 @@
+{
+    "name": "cumulus-inkstdraw",
+    "dev": {
+        "dsr_image_tag": "REL-1.0.3",
+        "dsr_configuration": {
+            "data_product": "inkstdraw",
+            "data_product_owner": "madhana.palanivelu@hp.com",
+            "dsr_operation_mode": "audit",
+            "dsr_max_task_concurrency": 3,
+            "logging": true,
+            "dsr_audit_catalog": "dsr_tools_dev",
+            "dsr_audit_schema": "dsr_audit",
+            "dsr_id_catalog": "team_enterprise_dev",
+            "dsr_id_schema": "data_privacy",
+            "dsr_id_sources": [
+              {
+                "name": "dsr_print_printer_uuid_blacklist",
+                "default": false,
+                "dsr_id_table": "dsr_print_printer_uuid_blacklist"
+              }
+            ],
+            "data_table_catalog": "team_cumulus_dev",
+            "data_table_schema": "print_telem_private",
+            "data_tables": [
+              {
+                "name": "ink_stdraw",
+                "dsr_id_sources": [
+                  {
+                    "name": "dsr_print_printer_uuid_blacklist",
+                    "data_table_key_aliases": {
+                      "printer_uuid": "uuid"
+                    }
+                  }
+                ]
+              }
+            ]
+        },
+        "email_to": ["swathi.v.k@hp.com"],
+        "service_account_name": "cumulus-airflow2",
+        "tolerations": "cumulus_tolerations",
+        "node_selector": "cumulus_node_selector",
+        "env_vars": {
+            "type": "databricks",
+            "catalog": "team_cumulus_dev",
+            "host": "dataos-cumulus-dev.cloud.cloud.databricks.com",
+            "http_path": "/sql/1.0/warehouses/1f897ff167781c03", 
+            "schema": "print_telem_private",
+            "secretname": "dev/databricks/team-cumulus/unity_team_cumulus_dataos_dev",
+            "threads": "4",
+            "AWS_DEFAULT_REGION": "us-west-2",
+            "IRSA_ROLE": "arn:aws:iam::740156627385:role/k8s-core-onecloud-airflow2"
+        },
+        "default_access_control": {
+           "cumulus-operator": ["can_read","can_edit"],
+            "cumulus-admin": ["can_read","can_edit"]
+        }
+    }    
+}

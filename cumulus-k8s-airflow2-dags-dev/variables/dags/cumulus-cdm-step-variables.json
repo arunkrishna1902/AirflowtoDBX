@@ -1,0 +1,146 @@
+{   "name": "cumulus_cdm_steps",
+    "dev": {
+        "dailyci_job-history-prod-stack": "prod_stack, redshiftloader_ink, redshiftloader_laser",
+        "dailyci_job-history-stage-stack": "stage_stack",
+
+        "dailyci_dune-job-history-prod-stack": "prod_stack",
+        "dailyci_dune-job-history-stage-stack": "stage_stack",
+        "dailyci_job-history": "prod_stack",
+      
+        "dailyci_psu-ink-fleet-prod-stack": "prod_stack",
+        "dailyci_psu-ink-fleet-stage-stack": "stage_stack",
+        "dailyci_psu-laser-sol-prod-stack": "prod_stack",
+        "dailyci_psu-laser-sol-stage-stack": "stage_stack",
+
+        "dailyci_psu-prod-stack": "ch,deph,biz_model,bm_rsloader,psu_ink,psu_ink_dune,psu_laser,psu_laser_dune,psu_laser_ya",
+
+        "dailyci_psu_ink_dune_prod_stack": "prod_stack",
+        "dailyci_psu_ink_dune_stage_stack": "stage_stack",
+        "dailyci_psu_ink_dune_pie_stack": "pie_stack",
+        "dailyci_psu_laser_dune_prod_stack": "prod_stack",
+      
+        "dailyci_sh_fleet_prod_stack": "prod_stack",
+        "dailyci_sh_fleet_stage_stack": "stage_stack",
+
+        "dailyci_sh_dune": "prod_stack,stage_stack",
+        "dailyci_supply_history": "prod_stack,stage_stack,imagingdevice_prod_stack,imagingdevice_stg_stack",
+        
+        "dailyci_biz_model_prod_stack": "prod_stack,redshiftloader",
+
+        "dailyci_consent_history_prod_stack": "prod_stack",
+        "dailyci_consent_history_stage_stack": "stage_stack",
+
+        "dailyci_device-env-profile-history": "prod_stack",
+
+        "dailyci_darwin-history-prod-stack": "prod_stack",
+        "dailyci_darwin-history-stage-stack": "stage_stack",
+        "dailyci_darwin-history-pie-stack": "pie_stack",
+        "dailyci_darwin-history": "pie_stack,stage_stack,prod_stack",
+
+		"dailyci_smc_prod_stack": "prod_stack",
+        "dailyci_smc": "prod_stack,armaki_lo_k,armaki_lo_cmy, iph_centaur_k, iph_centaur_cmy",
+
+        "dailyci_lfp_all_event_raw_data_dune": "prod_stack",
+        "dailyci_lfp_all_event_raw_data_fleet": "prod_stack",
+        "dailyci_lfp_job_history_dune": "prod_stack",
+        "dailyci_lfp_lifetime_counter_dune": "prod_stack",
+
+        "dailyci_manf_history": "prod_stack",
+      
+        "dev_psu-ink-fleet-prod-stack": "prod_stack",
+        "dev_psu-ink-fleet-stage-stack": "stage_stack",
+        "dev_psu-laser-sol-prod-stack": "prod_stack",
+        "dev_psu-laser-sol-stage-stack": "stage_stack",
+
+      
+        "dev_sh_fleet_prod_stack": "prod_stack",
+        "dev_sh_fleet_stage_stack": "stage_stack",
+
+		
+		"dev_smc_prod_stack": "prod_stack",
+        
+        "dev_lfp_all_event_raw_data_dune": "prod_stack",
+        "dev_lfp_all_event_raw_data_fleet": "prod_stack",
+        "dev_lfp_job_history_dune": "prod_stack",
+        "dev_lfp_lifetime_counter_dune": "prod_stack",
+
+        "dev_sandbox-yserhiichuk-dummy-job": "pie_stack"
+		
+    },
+    "itg": {
+        "itg_job-history-prod-stack": "prod_stack, redshiftloader_ink, redshiftloader_laser",
+        "itg_job-history-stage-stack": "stage_stack",
+      
+        "itg_psu-ink-fleet-prod-stack": "prod_stack",
+        "itg_psu-laser-sol-prod-stack": "prod_stack",
+        "itg_psu-ink-fleet-stage-stack": "stage_stack",
+        "itg_psu-laser-sol-stage-stack": "stage_stack",
+      
+        "itg_psu-prod-stack": "ch,deph,biz_model,bm_rsloader,psu_ink,psu_ink_dune,psu_laser,psu_laser_dune",
+
+        "itg_psu_ink_dune_prod_stack": "prod_stack",
+        "itg_psu_ink_dune_stage_stack": "stage_stack",
+        "itg_psu_ink_dune_pie_stack": "pie_stack",
+        "itg_psu_laser_dune_prod_stack": "prod_stack",
+
+        "itg_biz_model_prod_stack": "prod_stack,redshiftloader",
+
+        "itg_consent_history_prod_stack": "prod_stack",
+
+        "itg_device-env-profile-history": "prod_stack",
+        
+        "itg_sh_fleet_prod_stack": "prod_stack",
+        "itg_sh_fleet_stage_stack": "stage_stack",
+        
+        "itg_lfp_all_event_raw_data_dune_prod_stack": "prod_stack",
+        "itg_lfp_all_event_raw_data_fleet_prod_stack": "prod_stack",
+        
+        "itg_lfp_all_event_raw_data_dune": "prod_stack",
+        "itg_lfp_all_event_raw_data_fleet": "prod_stack",
+        "itg_lfp_job_history_dune": "prod_stack",
+        "itg_lfp_lifetime_counter_dune": "prod_stack",
+
+        "itg_darwin-history-prod-stack": "prod_stack",
+        "itg_darwin-history-stage-stack": "stage_stack",
+        "itg_darwin-history-pie-stack": "pie_stack",
+
+        "itg_manf_history_pie_stack": "pie_stack",
+        "itg_manf_history_prod_stack": "prod_stack",
+
+        "itg_sh_dune": "prod_stack,stage_stack"
+        
+    },
+    "prod": {
+        "prod_job-history-prod-stack": "prod_stack,redshiftloader_ink,redshiftloader_laser",
+        "prod_job-history-stage-stack": "stage_stack",
+      
+        "prod_psu-ink-fleet-prod-stack": "prod_stack",
+        "prod_psu-ink-fleet-stage-stack": "stage_stack",
+        "prod_psu-laser-sol-prod-stack": "prod_stack",
+        "prod_psu-laser-sol-stage-stack": "stage_stack",
+
+        "prod_psu-prod-stack": "ch,deph,biz_model,bm_rsloader,psu_ink,psu_ink_dune,psu_laser,psu_laser_dune",
+
+        "prod_biz_model_prod_stack": "prod_stack,redshiftloader",
+
+        "prod_consent_history_prod_stack": "prod_stack",
+      
+        "prod_sh_fleet_prod_stack": "prod_stack",
+        "prod_sh_fleet_stage_stack": "stage_stack",
+        
+        "prod_lfp_all_event_raw_data_dune": "prod_stack",
+        "prod_lfp_all_event_raw_data_fleet": "prod_stack",
+        "prod_lfp_job_history_dune": "prod_stack",
+        "prod_lfp_lifetime_counter_dune": "prod_stack",
+
+        "prod_darwin-history-prod-stack": "prod_stack",
+        "prod_darwin-history-stage-stack": "stage_stack",
+        "prod_darwin-history-pie-stack": "pie_stack",
+
+        "prod_manf_history_prod_stack": "prod_stack",
+
+        "prod_sh_dune": "prod_stack,stage_stack",
+	 "prod_smc": "prod_stack,armaki_lo_k,armaki_lo_cmy, iph_centaur_k, iph_centaur_cmy"
+        
+    }
+}
